@@ -129,7 +129,7 @@ export default function Home() {
           <div className="w-3/4 bg-white shadow-lg p-10 text-center">
             <h1 className={` ${nunito.className} text-4xl font-bold text-gray-900 uppercase`}>Luxury is the ultimate satisfaction</h1>
             <p className="mt-4 text-lg text-gray-700">
-              At Sugma Airways, luxury isn't just a service—it's a way of life. From the moment you step onboard, you're enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you're flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it's a guarantee.
+              At Sugma Airways, luxury isn&apos;t just a service—it&apos;s a way of life. From the moment you step onboard, you&apos;re enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you&apos;re flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it&apos;s a guarantee.
             </p>
           </div>
         </div>
