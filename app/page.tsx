@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Nunito } from 'next/font/google'
 import { Gothic_A1 } from "next/font/google";
 import { FadeInWhenVisible } from "@/components/FadeInWhenVisible";
@@ -53,7 +52,7 @@ export default function Home() {
             <div className=" w-[50%] mx-auto text-center">
               <h1 className=" text-4xl uppercase mb-4 text-gray-400 font-light w-[80%] mx-auto">We value your time and commitment.</h1>
               <p className=" mb-2 text-lg">
-                At Sugma Airways, we deeply value our customers' time and are committed to providing a punctual and efficient travel experience. Our dedicated team employs advanced scheduling systems and real-time tracking technology to ensure that flights operate on time.
+                At Sugma Airways, we deeply value our customers time and are committed to providing a punctual and efficient travel experience. Our dedicated team employs advanced scheduling systems and real-time tracking technology to ensure that flights operate on time.
               </p>
               <p className=" mb-2 text-lg">
                 We also prioritize proactive communication, offering timely updates and support to keep you informed about any changes. By continuously refining our processes and monitoring performance, Sugma Airways strives to respect your schedule and deliver a smooth, reliable journey from start to finish.
@@ -111,7 +110,7 @@ export default function Home() {
 
       <div className="relative h-screen">
         {/* Split background */}
-        
+
         <div className="absolute top-0 left-0 w-1/2 h-full">
           <FadeInFromOtherSide>
             <div className="firstclassright-bg h-full w-full"></div>
@@ -122,7 +121,7 @@ export default function Home() {
             <div className="firstclassleft-bg h-full w-full"></div>
           </FadeInFromSide>
         </div>
-        
+
 
 
         {/* Main content that runs across both sections */}
@@ -130,7 +129,7 @@ export default function Home() {
           <div className="w-3/4 bg-white shadow-lg p-10 text-center">
             <h1 className={` ${nunito.className} text-4xl font-bold text-gray-900 uppercase`}>Luxury is the ultimate satisfaction</h1>
             <p className="mt-4 text-lg text-gray-700">
-            At Sugma Airways, luxury isn't just a service—it's a way of life. From the moment you step onboard, you're enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you're flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it's a guarantee.
+              At Sugma Airways, luxury isn't just a service—it's a way of life. From the moment you step onboard, you're enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you're flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it's a guarantee.
             </p>
           </div>
         </div>
