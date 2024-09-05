@@ -1,4 +1,4 @@
-import { Nunito, Roboto } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import { Gothic_A1 } from "next/font/google";
 import { FadeInWhenVisible } from "@/components/FadeInWhenVisible";
 import { FadeInFromSide } from "@/components/FadeInFromSide";
