@@ -169,7 +169,7 @@ export default function Home() {
                       <div className=' w-[90%]'>
                         <h1 className={` uppercase font-bold text-3xl mb-4`}>paris</h1>
                         <p className={` ${nunito.className} mb-4`}>
-                          We&apos;re delighted to have you onboard as you make your way to the enchanting city of Paris. Get ready to experience the charm of the "City of Light" with its iconic landmarks, world-class cuisine, and rich culture. From the majestic Eiffel Tower to the historic streets of Montmartre, Paris offers something for everyone—romance, art, fashion, and unforgettable memories.
+                          We&apos;re delighted to have you onboard as you make your way to the enchanting city of Paris. Get ready to experience the charm of the &quot;City of Light&quot; with its iconic landmarks, world-class cuisine, and rich culture. From the majestic Eiffel Tower to the historic streets of Montmartre, Paris offers something for everyone—romance, art, fashion, and unforgettable memories.
 
                           At Sugma Airways, we strive to ensure your journey is as smooth and comfortable as possible. Thank you for choosing us, and we hope you enjoy every moment of your Parisian adventure!
 
@@ -188,7 +188,7 @@ export default function Home() {
                       <div className=' w-[90%]'>
                         <h1 className={` uppercase font-bold text-3xl mb-4`}>new york</h1>
                         <p className={` ${nunito.className} mb-4`}>
-                          We&apos;re excited to have you onboard as you journey to the vibrant city of New York. Get ready to dive into the energy of the "City That Never Sleeps," where iconic landmarks like Times Square, Central Park, and the Statue of Liberty await. Whether you&apos;re exploring world-class museums, enjoying Broadway shows, or simply soaking in the skyline, New York is a city of endless possibilities.
+                          We&apos;re excited to have you onboard as you journey to the vibrant city of New York. Get ready to dive into the energy of the &quot;City That Never Sleeps,&quot; where iconic landmarks like Times Square, Central Park, and the Statue of Liberty await. Whether you&apos;re exploring world-class museums, enjoying Broadway shows, or simply soaking in the skyline, New York is a city of endless possibilities.
 
                           At Sugma Airways, your comfort and satisfaction are our top priorities. Thank you for flying with us, and we hope your time in New York is as unforgettable as the city itself!
 
