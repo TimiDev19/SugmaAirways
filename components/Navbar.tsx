@@ -19,10 +19,10 @@ const Navbar = () => {
             <FadeInWhenVisible>
                 <div>
                     <ul className='flex items-center space-x-4'>
-                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#'>Home</a></li>
-                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#'>About</a></li>
-                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#'>Tikects</a></li>
-                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#'>Contact</a></li>
+                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#home'>Home</a></li>
+                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#about'>About</a></li>
+                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#tickets'>Tikects</a></li>
+                        <li className=' uppercase text-sm hover:text-gray-400 duration-200'><a href='#contact'>Contact</a></li>
                     </ul>
                 </div>
             </FadeInWhenVisible>

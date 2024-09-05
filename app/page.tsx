@@ -1,8 +1,16 @@
-import { Nunito } from 'next/font/google'
+import { Nunito, Roboto } from 'next/font/google'
 import { Gothic_A1 } from "next/font/google";
 import { FadeInWhenVisible } from "@/components/FadeInWhenVisible";
 import { FadeInFromSide } from "@/components/FadeInFromSide";
 import { FadeInFromOtherSide } from "@/components/FadeInFromOtherSide";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 
 const gothic_a1 = Gothic_A1({
   subsets: ['latin'],
@@ -19,7 +27,7 @@ export default function Home() {
   return (
     <div>
       <FadeInWhenVisible>
-        <div className=" h-[100vh]">
+        <div className=" h-[100vh]" id="home">
           <video
             autoPlay
             muted
@@ -46,7 +54,7 @@ export default function Home() {
 
 
 
-      <div className=" h-[80vh] promo-bg w-full">
+      <div className=" h-[80vh] promo-bg w-full" id='about'>
         <FadeInWhenVisible>
           <div className={` ${nunito.className} w-[100vw] h-[80vh] flex items-center justify-center text-white`}>
             <div className=" w-[50%] mx-auto text-center">
@@ -112,26 +120,111 @@ export default function Home() {
         {/* Split background */}
 
         <div className="absolute top-0 left-0 w-1/2 h-full">
-          <FadeInFromOtherSide>
-            <div className="firstclassright-bg h-full w-full"></div>
-          </FadeInFromOtherSide>
+          <div className="firstclassright-bg h-full w-full"></div>
         </div>
         <div className="absolute top-0 right-0 w-1/2 h-full">
-          <FadeInFromSide>
-            <div className="firstclassleft-bg h-full w-full"></div>
-          </FadeInFromSide>
+          <div className="firstclassleft-bg h-full w-full"></div>
         </div>
 
 
 
         {/* Main content that runs across both sections */}
-        <div className="relative z-10 flex justify-center items-center h-full w-[50%] mx-auto">
-          <div className="w-3/4 bg-white shadow-lg p-10 text-center">
-            <h1 className={` ${nunito.className} text-4xl font-bold text-gray-900 uppercase`}>Luxury is the ultimate satisfaction</h1>
-            <p className="mt-4 text-lg text-gray-700">
-              At Sugma Airways, luxury isn&apos;t just a service—it&apos;s a way of life. From the moment you step onboard, you&apos;re enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you&apos;re flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it&apos;s a guarantee.
-            </p>
+        <FadeInFromOtherSide>
+          <div className="relative z-10 flex justify-center items-center h-full w-[50%] mx-auto">
+            <div className="w-3/4 bg-white shadow-lg p-10 text-center">
+              <h1 className={` ${nunito.className} text-4xl font-bold text-gray-900 uppercase`}>Luxury is the ultimate satisfaction</h1>
+              <p className="mt-4 text-lg text-gray-700">
+                At Sugma Airways, luxury isn&apos;t just a service—it&apos;s a way of life. From the moment you step onboard, you&apos;re enveloped in an atmosphere of sophistication and comfort. Our spacious seating, gourmet dining options, and personalized service redefine air travel, turning every journey into an indulgent experience. Whether you&apos;re flying for business or pleasure, Sugma Airways ensures that you arrive at your destination refreshed, pampered, and inspired. Experience the art of travel like never before, where every detail is designed to exceed your expectations. Luxury is not optional at Sugma Airways—it&apos;s a guarantee.
+              </p>
+            </div>
           </div>
+        </FadeInFromOtherSide>
+
+        <div className=' ticket-bg m-auto w-full h-[80vh] flex items-center justify-center' id='tickets'>
+          <Carousel className=' w-[80%]'>
+            <FadeInWhenVisible>
+              <CarouselContent className=' w-fit'>
+                <CarouselItem className=' w-fit'>
+                  <div className=' bg-white w-[70vw] mx-4 h-[60vh] flex items-center justify-between'>
+                    <div className={` ${gothic_a1.className} w-[45%] h-full text-left flex justify-center items-center`}>
+                      <div className=' w-[90%]'>
+                        <h1 className={` uppercase font-bold text-3xl mb-4`}>maldives</h1>
+                        <p className={` ${nunito.className} mb-4`}>
+                          We are thrilled to have you onboard as you embark on an unforgettable journey to the Maldives. Get ready to immerse yourself in the pristine beauty of turquoise waters, white sandy beaches, and endless sunshine. Whether you&apos;re seeking relaxation, adventure, or a little bit of both, the Maldives has it all.
+
+                          At Sugma Airways, we are dedicated to providing a smooth, comfortable, and enjoyable flight experience, so sit back, relax, and let us take you to paradise. Thank you for choosing us, and we look forward to serving you again!
+
+                          Safe travels and enjoy your stay in the Maldives! 🌴✈️
+                        </p>
+                        <button className=' bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-2 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300'>Book Ticket ✈️</button>
+                      </div>
+                    </div>
+                    <div className=' w-[45%] h-full maldives bg-red-500'>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className=' w-fit'>
+                  <div className=' bg-white w-[70vw] mx-4 h-[60vh] flex items-center justify-between'>
+                    <div className={` ${gothic_a1.className} w-[45%] h-full text-left flex justify-center items-center`}>
+                      <div className=' w-[90%]'>
+                        <h1 className={` uppercase font-bold text-3xl mb-4`}>paris</h1>
+                        <p className={` ${nunito.className} mb-4`}>
+                          We&apos;re delighted to have you onboard as you make your way to the enchanting city of Paris. Get ready to experience the charm of the "City of Light" with its iconic landmarks, world-class cuisine, and rich culture. From the majestic Eiffel Tower to the historic streets of Montmartre, Paris offers something for everyone—romance, art, fashion, and unforgettable memories.
+
+                          At Sugma Airways, we strive to ensure your journey is as smooth and comfortable as possible. Thank you for choosing us, and we hope you enjoy every moment of your Parisian adventure!
+
+                          Bon voyage and see you in Paris! 🌟✈️
+                        </p>
+                        <button className=' bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-2 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300'>Book Ticket ✈️</button>
+                      </div>
+                    </div>
+                    <div className=' w-[45%] h-full paris bg-red-500'>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className=' w-fit'>
+                  <div className=' bg-white w-[70vw] mx-4 h-[60vh] flex items-center justify-between'>
+                    <div className={` ${gothic_a1.className} w-[45%] h-full text-left flex justify-center items-center`}>
+                      <div className=' w-[90%]'>
+                        <h1 className={` uppercase font-bold text-3xl mb-4`}>new york</h1>
+                        <p className={` ${nunito.className} mb-4`}>
+                          We&apos;re excited to have you onboard as you journey to the vibrant city of New York. Get ready to dive into the energy of the "City That Never Sleeps," where iconic landmarks like Times Square, Central Park, and the Statue of Liberty await. Whether you&apos;re exploring world-class museums, enjoying Broadway shows, or simply soaking in the skyline, New York is a city of endless possibilities.
+
+                          At Sugma Airways, your comfort and satisfaction are our top priorities. Thank you for flying with us, and we hope your time in New York is as unforgettable as the city itself!
+
+                          Safe travels, and see you in the Big Apple! 🗽✈️
+                        </p>
+                        <button className=' bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-2 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300'>Book Ticket ✈️</button>
+                      </div>
+                    </div>
+                    <div className=' w-[45%] h-full ny bg-red-500'>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className=' w-fit'>
+                  <div className=' bg-white w-[70vw] mx-4 h-[60vh] flex items-center justify-between'>
+                    <div className={` ${gothic_a1.className} w-[45%] h-full text-left flex justify-center items-center`}>
+                      <div className=' w-[90%]'>
+                        <h1 className={` uppercase font-bold text-3xl mb-4`}>madrid</h1>
+                        <p className={` ${nunito.className} mb-4`}>
+                          We&apos;re thrilled to have you onboard as you fly to the lively city of Madrid. Get ready to immerse yourself in Spain&apos;s vibrant capital, where historic architecture meets modern flair. From the grandeur of the Royal Palace to the energy of Puerta del Sol and the world-famous Prado Museum, Madrid offers a rich tapestry of culture, art, and delicious cuisine.
+
+                          At Sugma Airways, we&apos;re committed to making your journey as smooth and enjoyable as possible. Thank you for choosing to fly with us, and we hope you enjoy every moment in the heart of Spain!
+
+                          ¡Buen viaje, and welcome to Madrid! 🇪🇸✈️
+                        </p>
+                        <button className=' bg-slate-200 bg-opacity-50 backdrop-blur-md font-bold py-2 px-4 border border-gray-500 hover:border-2 hover:bg-transparent transition-all duration-300'>Book Ticket ✈️</button>
+                      </div>
+                    </div>
+                    <div className=' w-[45%] h-full madrid bg-red-500'>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </FadeInWhenVisible>
+          </Carousel>
         </div>
       </div>
     </div>
