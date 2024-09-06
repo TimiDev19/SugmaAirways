@@ -86,6 +86,13 @@ body {
   background-size: cover;
 }
 
+.contact {
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url('../public/assets/contact.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

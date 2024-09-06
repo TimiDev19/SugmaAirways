@@ -226,6 +226,83 @@ export default function Home() {
             </FadeInWhenVisible>
           </Carousel>
         </div>
+
+        <div className={`${nunito.className} h-[100vh] flex items-center justify-between`} id='contact'>
+          <div className=' w-[90%] h-[85%] bg-white mx-auto contact flex items-start justify-between p-10'>
+            <div className=' w-[45%]'>
+              <FadeInWhenVisible>
+                <form action="">
+                  <h1 className=' text-5xl text-white uppercase mb-6'>Contact Us !</h1>
+                  <div className="relative w-[80%] mb-6">
+                    <label
+
+                      className=" text-white font-semibold text-sm mb-6"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className=" placeholder:text-white placeholder:text-sm block w-full py-2 text-sm font-thin text-white bg-transparent border-b border-white focus:outline-none peer"
+                      placeholder="John"
+                    />
+                  </div>
+
+                  <div className="relative w-[80%] mb-6">
+                    <label
+
+                      className=" text-white font-semibold text-sm mb-6"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className=" placeholder:text-white placeholder:text-sm block w-full py-2 text-sm font-thin text-white bg-transparent border-b border-white focus:outline-none peer"
+                      placeholder="Doe"
+                    />
+                  </div>
+
+                  <div className="relative w-[80%] mb-6">
+                    <label
+
+                      className=" text-white font-semibold text-sm mb-6"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="name"
+                      name="name"
+                      className=" placeholder:text-white placeholder:text-sm block w-full py-2 text-sm font-thin text-white bg-transparent border-b border-white focus:outline-none peer"
+                      placeholder="youremail@gmail.com"
+                    />
+                  </div>
+
+                  <div className="relative w-[80%] mb-6">
+                    <label
+
+                      className=" text-white font-semibold text-sm mb-6"
+                    >
+                      Message
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className=" placeholder:text-white placeholder:text-sm block w-full py-2 text-sm font-thin text-white bg-transparent border-b border-white focus:outline-none peer"
+                      placeholder="Your Message"
+                    />
+                  </div>
+
+                  <button className='bg-white/10 backdrop-blur-lg border border-white text-white font-semibold py-2 px-4 rounded-full hover:bg-white/0 duration-700'>Contact</button>
+                </form>
+              </FadeInWhenVisible>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
