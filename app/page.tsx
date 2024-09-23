@@ -228,8 +228,8 @@ export default function Home() {
         </div>
 
 {/* mobile */}
-        <div className=' ticket-bg m-auto w-full h-[80vh] flex items-center justify-center' id='tickets'>
-          <Carousel className=' w-[70%] lg:w-[80%]'>
+        <div className=' ticket-bg m-auto w-full h-[80vh] flex items-center justify-center lg:hidden' id='tickets'>
+          <Carousel className=' w-[70%] '>
             <FadeInWhenVisible>
               <CarouselContent className=' w-fit'>
                 <CarouselItem className='block lg:hidden w-fit'>
